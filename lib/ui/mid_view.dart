@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_weather_app/model/weather_model.dart';
+import 'package:flutter_weather_app/util/Util.dart';
 import 'package:line_chart/charts/line-chart.widget.dart';
 import 'package:line_chart/model/line-chart.model.dart';
 
@@ -29,6 +30,8 @@ Widget midView(
             fontWeight: FontWeight.bold,
           ),
         ),
+        Text(Util.getFormattedDate(DateTime.fromMicrosecondsSinceEpoch(
+            snapshot.data.daily[0].dt * 1000000))),
         Divider(
           height: MediaQuery.of(context).size.width * 0.1,
           color: Colors.white,
