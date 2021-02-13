@@ -1,6 +1,6 @@
 # flutter_weather_app
 
-A very simple practise on using open APIs to gather online data
+A very simple practise on using open APIs 
 
 ## description
 
